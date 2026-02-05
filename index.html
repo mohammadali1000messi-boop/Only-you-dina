@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One Month Anniversary</title>
+<style>
+  body {
+    margin:0;
+    padding:0;
+    background: linear-gradient(to bottom, #87CEFA, #ffffff);
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* متن انیمیشن */
+  .text-box {
+    width: 60%;
+    text-align: center;
+    font-size: 1.2em;
+    color: #111;
+    line-height: 1.6em;
+  }
+  .text-box span {
+    opacity: 0;
+    display: block;
+    animation: fadeIn 2s forwards;
+  }
+  .text-box span:nth-child(1){animation-delay: 0s;}
+  .text-box span:nth-child(2){animation-delay: 2s;}
+  .text-box span:nth-child(3){animation-delay: 4s;}
+  .text-box span:nth-child(4){animation-delay: 6s;}
+
+  @keyframes fadeIn {
+    to { opacity:1; }
+  }
+
+  /* قلب و ستاره‌ها */
+  .emoji {
+    position: absolute;
+    font-size: 2rem;
+    opacity: 0.5;
+    animation: floatUp 8s infinite;
+  }
+  @keyframes floatUp {
+    0% { transform: translateY(100vh) rotate(0deg);}
+    100% { transform: translateY(-50px) rotate(360deg);}
+  }
+
+  /* موزیک */
+  .music-box {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+  }
+  .music-box audio {
+    width: 300px;
+  }
+</style>
+</head>
+<body>
+
+<!-- متن انیمیشن -->
+<div class="text-box">
+  <span>My dear Dina ♥️</span>
+  <span>Spending a month by your side has filled my life with warmth, positive energy, understanding, and a renewed passion for living.</span>
+  <span>Thank you for being you one of the most beautiful things in my life ✨😍</span>
+  <span>«Happy one-month anniversary of our acquaintance.»</span>
+</div>
+
+<!-- قلب و ستاره‌ها -->
+<div class="emoji" style="left:10%; top:70%;">❤️</div>
+<div class="emoji" style="left:20%; top:60%;">💖</div>
+<div class="emoji" style="left:35%; top:80%;">⭐</div>
+<div class="emoji" style="left:50%; top:75%;">💖</div>
+<div class="emoji" style="left:65%; top:70%;">❤️</div>
+<div class="emoji" style="left:80%; top:60%;">⭐</div>
+<div class="emoji" style="left:90%; top:80%;">💖</div>
+<div class="emoji" style="left:45%; top:85%;">⭐</div>
+
+<!-- موزیک -->
+<div class="music-box">
+  <audio controls>
+    <source src="bg_audio_01.mp3" type="audio/mpeg">
+    مرورگر شما از پخش صوت پشتیبانی نمی‌کند
+  </audio>
+</div>
+
+</body>
+</html>
